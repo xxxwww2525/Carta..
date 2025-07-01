@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Carta Secreta by myeya</title>
+  <title>Carta Secreta</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
       background-color: #fce4ec;
@@ -57,7 +57,7 @@
       width: 90%;
       max-width: 500px;
       text-align: left;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: 'Georgia', serif;
       line-height: 1.6;
     }
     .notepad h3,
@@ -89,7 +89,7 @@
 
 <!-- Pantalla contraseña -->
 <div id="passwordScreen" class="screen password-screen active">
-  <h2>🔒 Ingresa la contraseña</h2>
+  <h2>Ingresa la contraseña</h2>
   <div class="input-display" id="inputDisplay">••••</div>
   <div class="keypad">
     <button class="key" onclick="enterDigit('1')">1</button>
@@ -110,42 +110,28 @@
 <!-- Pantalla carta -->
 <div id="notepadScreen" class="screen">
   <div class="notepad">
-    <h3>📅 22 Junio 2024 – 01 Julio 2025</h3>
-    <h4>💌 Mi Querido Darlin</h4>
+    <h3>22 Junio 2024 – 01 Julio 2025</h3>
+    <h4>Para mi niña</h4>
 
     <p>
-      Quiero que sepas lo feliz que soy por tenerte en mi vida. Desde que llegaste, todo cambió para mejor.
-      Me haces sentir amada, cuidada y acompañada de una forma que nunca antes había sentido.
+      Mi lucesita,
     </p>
     <p>
-      A tu lado aprendí lo que es el amor verdadero, ese que se demuestra con acciones, con palabras sinceras
-      y con esos pequeños detalles que hacen la diferencia. Gracias por estar siempre conmigo, por darme tu
-      tiempo, tu cariño y tu comprensión.
-    </p>
-    <p>
-      No sé cómo explicarlo, pero contigo mi corazón está en paz. Eres mi alegría diaria
-      y la razón de tantas sonrisas.
-    </p>
-    <p>Te amo profundamente. ♡</p>
-
-    <hr />
-
-    <p>
-      Eres alguien increíble, y cada día contigo me hace querer dar un paso más.  
-      Por eso, quiero hacerte una pregunta muy especial:
+      Aunque estemos en países distintos, mi corazón te siente muy cerca.
+      Desde que llegaste, todo en mí cambió… y hoy quiero dar un paso más.
     </p>
 
-    <h3>¿Quieres ser mi novia? 💍</h3>
+    <h3>¿Quieres ser mi novia?</h3>
 
     <div id="buttons" style="margin: 20px 0;">
-      <button class="btn-love btn-yes" onclick="sayYes()">Sí 💗</button>
-      <button class="btn-love btn-no" onclick="sayNo()">No 😢</button>
+      <button class="btn-love btn-yes" onclick="sayYes()">Sí</button>
+      <button class="btn-love btn-no" onclick="sayNo()">No</button>
     </div>
 
     <div id="responseMessage" style="font-size: 18px; font-weight: bold; margin-top: 20px;"></div>
 
     <div id="arrowHint" style="display: none; margin-top: 30px;">
-      <p>¿Estás segura? Mira bien... 👉</p>
+      <p>¿Estás segura? Mira bien...</p>
       <div style="font-size: 40px;">⬅️</div>
     </div>
   </div>
@@ -175,13 +161,13 @@
 
   function sayYes() {
     document.getElementById('responseMessage').textContent =
-      '¡Te amo muchísimo! 💖 Gracias por decir que sí.';
+      'Te amo muchísimo. Gracias por decir que sí.';
     document.getElementById('arrowHint').style.display = 'none';
   }
 
   function sayNo() {
     document.getElementById('responseMessage').textContent =
-      '🥺 Está bien... pero lo que siento sigue aquí.';
+      'Está bien... pero lo que siento sigue aquí.';
     document.getElementById('arrowHint').style.display = 'block';
   }
 </script>
